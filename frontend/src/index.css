@@ -1,0 +1,173 @@
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h2 {
+  font-size: 18px;
+}
+
+.modal-header button {
+  border: none;
+  background: #f1f2f3;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.setting-item strong {
+  font-size: 14px;
+}
+
+.setting-item p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Toggle */
+
+.toggle {
+  width: 46px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
+  background: #d1d5db;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.toggle span {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.toggle.active {
+  background: #111318;
+}
+
+.toggle.active span {
+  transform: translateX(21px);
+}
+
+/* Help */
+
+.help-content {
+  padding-top: 20px;
+}
+
+.help-content h3 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.help-content p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.help-content hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 18px 0;
+}
+
+/* Dark mode */
+
+.dark-mode .main {
+  background: #17181c;
+  color: #f5f5f5;
+}
+
+.dark-mode .topbar {
+  border-color: #292c32;
+}
+
+.dark-mode .topbar span {
+  color: #999;
+}
+
+.dark-mode .message {
+  background: #292c32;
+  color: #f5f5f5;
+}
+
+.dark-mode .message-row.user .message {
+  background: #3b3e45;
+}
+
+.dark-mode .input-container {
+  background: #202329;
+  border-color: #3a3d44;
+}
+
+.dark-mode .input-container textarea {
+  color: white;
+}
+
+.dark-mode .suggestions button {
+  background: #202329;
+  border-color: #363941;
+  color: white;
+}
+
+.dark-mode .suggestions button:hover {
+  background: #292c32;
+}
+
+.dark-mode .welcome > p {
+  color: #999;
+}
